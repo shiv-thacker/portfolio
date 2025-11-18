@@ -59,6 +59,7 @@
   text-align: center;
   position: relative;
   z-index: 10;
+  padding-top: 6rem;
 }
 
 .hero-greeting {
@@ -217,22 +218,48 @@
 
 .scroll-indicator {
   position: absolute;
-  bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: 3rem;
+  right: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
   color: #4a9eff;
   font-size: 0.9rem;
+  z-index: 20;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.scroll-indicator:hover {
+  color: #357abd;
+}
+
+.scroll-indicator span {
+  font-weight: 500;
+  letter-spacing: 0.5px;
 }
 
 .scroll-arrow {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  line-height: 1;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
 }
 
 @media (max-width: 768px) {
+  .hero-content {
+    padding-top: 4rem;
+  }
+
   .hero-name {
     font-size: 2.5rem;
   }
@@ -258,6 +285,16 @@
   .btn {
     width: 100%;
     max-width: 250px;
+  }
+
+  .scroll-indicator {
+    bottom: 2rem;
+    right: 1.5rem;
+    font-size: 0.8rem;
+  }
+
+  .scroll-arrow {
+    font-size: 1.5rem;
   }
 }
 

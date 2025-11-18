@@ -169,15 +169,21 @@ const Hero = () => {
             <FaGithub />
           </motion.a>
         </motion.div>
+      </motion.div>
 
-        <motion.div
-          className="scroll-indicator"
-          animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 1.5, repeat: Infinity }}
-        >
-          <span>Scroll Down</span>
-          <div className="scroll-arrow">↓</div>
-        </motion.div>
+      <motion.div
+        className="scroll-indicator"
+        animate={{ y: [0, 10, 0] }}
+        transition={{ duration: 1.5, repeat: Infinity }}
+        onClick={() => {
+          window.scrollTo({
+            top: window.innerHeight,
+            behavior: 'smooth'
+          });
+        }}
+      >
+        <span>Scroll Down</span>
+        <div className="scroll-arrow">↓</div>
       </motion.div>
     </section>
   );

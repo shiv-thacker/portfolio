@@ -51,6 +51,7 @@ const ChatBot = ({ isOpen, setIsOpen }) => {
       otr: "On Target Romance (OTR) - Community platform for romance authors with Braintree payment integration and social authentication.",
       primpblow: "Primp & Blow - Salon booking app for U.S.-based chain with biometric authentication (Face ID/Fingerprint) and Booker.io API integration.",
       jamrio: "Jamrio Community App - Social networking platform for artists with Redux, WebSockets, and real-time features.",
+      syracoffee: "Syra Coffee - E-commerce mobile application for coffee products built with React Native, Supabase, and GraphQL. Managed an already created project with team collaboration.",
       personal: "Personal projects include EVC Finder, Dating App, Firebase Chat App, Amazon Clone, Social Media App, and Noise Detector."
     },
     
@@ -109,7 +110,10 @@ const ChatBot = ({ isOpen, setIsOpen }) => {
       if (message.includes('jamrio')) {
         return `**Jamrio Community App:**\n${knowledgeBase.projects.jamrio}\n\nA feature-rich social platform for artists with real-time communication.`;
       }
-      return `Shivang has worked on several impressive projects:\n\n1. **OMNIYAT** - Luxury concierge app (Flutter)\n2. **OTR** - Author networking platform\n3. **Primp & Blow** - Salon booking app\n4. **Jamrio** - Social platform for artists\n\nHe's also built 6+ personal projects including dating apps, e-commerce clones, and utility apps. Would you like details about any specific project?`;
+      if (message.includes('syra') || message.includes('coffee')) {
+        return `**Syra Coffee:**\n${knowledgeBase.projects.syracoffee}\n\nShivang took over and managed this e-commerce project, demonstrating strong team collaboration skills.`;
+      }
+      return `Shivang has worked on several impressive projects:\n\n1. **OMNIYAT** - Luxury concierge app (Flutter)\n2. **OTR** - Author networking platform\n3. **Primp & Blow** - Salon booking app\n4. **Jamrio** - Social platform for artists\n5. **Syra Coffee** - E-commerce coffee app (React Native, Supabase, GraphQL)\n\nHe's also built 6+ personal projects including dating apps, e-commerce clones, and utility apps. Would you like details about any specific project?`;
     }
     
     // Education

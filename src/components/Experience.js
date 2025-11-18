@@ -29,6 +29,16 @@ const Experience = () => {
           ]
         },
         {
+          name: 'Syra Coffee (E-commerce App)',
+          description: 'E-commerce mobile application for coffee products, enabling users to browse, order, and purchase premium coffee products with seamless shopping experience.',
+          achievements: [
+            'Took over and managed an already created project',
+            'Collaborated with team members to enhance and maintain the application',
+            'Developed e-commerce features including product catalog, shopping cart, and checkout',
+            'Skills Gained: Supabase integration, GraphQL implementation, team collaboration'
+          ]
+        },
+        {
           name: 'OTR (On Target Romance)',
           description: 'A specialized platform designed for romance authors, beta readers, bloggers, and vendors to connect and manage their own events.',
           achievements: [
@@ -47,7 +57,7 @@ const Experience = () => {
             'Published on both Google Play Store and Apple App Store',
             'Skills Gained: Biometric login with Face ID and Fingerprint, secure credentials using React Native Keychain'
           ]
-        }
+        },
       ]
     },
     {

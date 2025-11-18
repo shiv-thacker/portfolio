@@ -21,28 +21,28 @@ const Skills = () => {
       skills: [
         { name: 'React Native', icon: <FaReact />, level: 95 },
         { name: 'Expo', icon: <SiExpo />, level: 90 },
-        { name: 'React JS', icon: <FaReact />, level: 90 },
+        { name: 'React JS', icon: <FaReact />, level: 70 },
         { name: 'Redux', icon: <SiRedux />, level: 85 },
-        { name: 'Flutter', icon: <SiFlutter />, level: 75 },
+        { name: 'Flutter', icon: <SiFlutter />, level: 40 },
       ]
     },
     {
       title: 'Backend & Database',
       icon: <FaDatabase />,
       skills: [
-        { name: 'Node.js', icon: <FaNodeJs />, level: 85 },
-        { name: 'Express.js', icon: <FaNodeJs />, level: 85 },
-        { name: 'MongoDB', icon: <SiMongodb />, level: 80 },
-        { name: 'Firebase', icon: <SiFirebase />, level: 88 },
-        { name: 'AWS', icon: <FaAws />, level: 75 },
+        { name: 'Node.js', icon: <FaNodeJs />, level: 50 },
+        { name: 'Express.js', icon: <FaNodeJs />, level: 50 },
+        { name: 'MongoDB', icon: <SiMongodb />, level: 50 },
+        { name: 'Firebase', icon: <SiFirebase />, level: 50 },
+        { name: 'AWS', icon: <FaAws />, level: 50 },
       ]
     },
     {
       title: 'Tools & Platforms',
       icon: <FaGitAlt />,
       skills: [
-        { name: 'Android Studio', icon: <FaAndroid />, level: 85 },
-        { name: 'Xcode', icon: <FaApple />, level: 80 },
+        { name: 'Android Studio', icon: <FaAndroid />, level: 60 },
+        { name: 'Xcode', icon: <FaApple />, level: 60 },
         { name: 'Git', icon: <FaGitAlt />, level: 90 },
         { name: 'Scrum/Agile', icon: <FaGitAlt />, level: 85 },
       ]

@@ -13,14 +13,26 @@ const Projects = () => {
   const [filter, setFilter] = useState('all');
 
   const projects = [
+   
     {
       title: 'OMNIYAT Concierge App',
       category: 'professional',
       description: 'Luxury real estate concierge app for Dubai residents providing services like valet, laundry, maintenance, restaurant reservations, spa bookings, and 24/7 chat support.',
       tech: ['Flutter', 'Firebase', 'AI Integration', 'Cursor AI', 'Real-time Chat'],
       icon: '🏢',
-      status: 'In Production',
-      highlights: ['Built from scratch', 'AI native flow', 'Client collaboration']
+      status: 'In UAT',
+      highlights: ['Built from scratch', 'AI native flow', 'Client collaboration'],
+      link: 'https://www.omniyat.com/'
+    },
+    {
+      title: 'Syra Coffee',
+      category: 'professional',
+      description: 'E-commerce mobile application for coffee products, enabling users to browse, order, and purchase premium coffee products with seamless shopping experience.',
+      tech: ['React Native', 'Supabase', 'GraphQL'],
+      icon: '☕',
+      status: 'Live',
+      highlights: ['Team collaboration', 'Already created project & handle it', 'E-commerce app'],
+      link: 'https://apps.apple.com/tr/app/syra-coffee/id1609933400'
     },
     {
       title: 'On Target Romance (OTR)',
@@ -28,7 +40,7 @@ const Projects = () => {
       description: 'Community & networking platform for romance authors, beta readers, bloggers, and vendors to connect and manage events.',
       tech: ['React Native', 'Braintree', 'Push Notifications', 'Document Picker'],
       icon: '📚',
-      status: 'Live',
+      status: 'In Development',
       highlights: ['Code restructuring', 'Payment integration', 'Social auth']
     },
     {
@@ -37,8 +49,9 @@ const Projects = () => {
       description: 'Salon booking app for U.S.-based chain allowing appointment scheduling for blowouts, makeup, and hair extensions.',
       tech: ['React Native', 'Booker.io API', 'Face ID', 'Keychain', 'iOS', 'Android'],
       icon: '💇‍♀️',
-      status: 'Published',
-      highlights: ['Biometric auth', 'E-commerce integration', 'Cross-platform']
+      status: 'Live',
+      highlights: ['Biometric auth', 'E-commerce integration', 'Cross-platform'],
+      link: 'https://apps.apple.com/ca/app/primp-and-blow/id921704948'
     },
     {
       title: 'Jamrio Community App',
@@ -47,8 +60,10 @@ const Projects = () => {
       tech: ['React Native', 'Redux', 'WebSockets', 'Push Notifications', 'Video Sharing'],
       icon: '🎵',
       status: 'Live',
-      highlights: ['Real-time features', 'State management', 'Performance optimization']
+      highlights: ['Real-time features', 'State management', 'Performance optimization'],
+      link: 'https://jamr-production.firebaseapp.com/'
     },
+   
     {
       title: 'EVC Finder',
       category: 'personal',
@@ -56,7 +71,8 @@ const Projects = () => {
       tech: ['React Native', 'Google Maps API', 'Geolocation', 'Firebase'],
       icon: '⚡',
       status: 'Personal Project',
-      highlights: ['Maps integration', 'Real-time location']
+      highlights: ['Maps integration', 'Real-time location'],
+      link: 'https://github.com/shiv-thacker/EV-charging-app'
     },
     {
       title: 'Dating Fullstack App',
@@ -65,7 +81,8 @@ const Projects = () => {
       tech: ['React Native', 'Node.js', 'MongoDB', 'WebSockets', 'Stripe'],
       icon: '💝',
       status: 'Personal Project',
-      highlights: ['Full-stack', 'Real-time chat', 'Payment integration']
+      highlights: ['Full-stack', 'Real-time chat', 'Payment integration'],
+      link: 'https://github.com/shiv-thacker/date'
     },
     {
       title: 'Firebase Chat App',
@@ -74,7 +91,8 @@ const Projects = () => {
       tech: ['React Native', 'Firebase', 'Real-time Database', 'Authentication'],
       icon: '💬',
       status: 'Personal Project',
-      highlights: ['Real-time messaging', 'Firebase integration']
+      highlights: ['Real-time messaging', 'Firebase integration'],
+      link: 'https://github.com/shiv-thacker/firebase_chat_application'
     },
     {
       title: 'Amazon Clone',
@@ -83,7 +101,8 @@ const Projects = () => {
       tech: ['React Native', 'Node.js', 'MongoDB', 'Stripe', 'Redux'],
       icon: '🛒',
       status: 'Personal Project',
-      highlights: ['E-commerce features', 'Payment gateway']
+      highlights: ['E-commerce features', 'Payment gateway'],
+      link: 'https://github.com/shiv-thacker/e-commers'
     },
     {
       title: 'Social Media App',
@@ -92,7 +111,8 @@ const Projects = () => {
       tech: ['React Native', 'Node.js', 'MongoDB', 'AWS', 'Redux'],
       icon: '📱',
       status: 'Personal Project',
-      highlights: ['Full-stack', 'Social features', 'Cloud storage']
+      highlights: ['Full-stack', 'Social features', 'Cloud storage'],
+      link: 'https://github.com/shiv-thacker/socialmedia_frontend'
     },
     {
       title: 'Noise Detector',
@@ -101,7 +121,8 @@ const Projects = () => {
       tech: ['React Native', 'Audio API', 'Data Visualization'],
       icon: '🔊',
       status: 'Personal Project',
-      highlights: ['Audio processing', 'Data visualization']
+      highlights: ['Audio processing', 'Data visualization'],
+      link: 'https://github.com/shiv-thacker/Noise_Detector'
     }
   ];
 
@@ -212,13 +233,26 @@ const Projects = () => {
                 </div>
 
                 <div className="project-footer">
-                  <motion.button
-                    className="project-btn"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    <FaMobileAlt /> View Details
-                  </motion.button>
+                  {project.link ? (
+                    <motion.a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-btn"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      <FaMobileAlt /> View Details
+                    </motion.a>
+                  ) : (
+                    <motion.button
+                      className="project-btn"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      <FaMobileAlt /> View Details
+                    </motion.button>
+                  )}
                 </div>
               </motion.div>
             ))}
