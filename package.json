@@ -2,7 +2,7 @@
   "name": "shivang-portfolio",
   "version": "0.1.0",
   "private": true,
- "homepage": "https://shiv-thacker.github.io/portfolio",  
+  "homepage": "https://shiv-thacker.github.io/portfolio",
   "dependencies": {
     "framer-motion": "^10.16.4",
     "react": "^18.2.0",
@@ -36,5 +36,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
