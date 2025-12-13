@@ -49,7 +49,7 @@ const Contact = () => {
     {
       icon: <FaMapMarkerAlt />,
       title: 'Location',
-      value: 'Rajkot, Gujarat, India - 360005',
+      value: 'Ahmedabad, Gujarat, India - 360005',
       link: null
     },
     {

@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { FaTrophy } from 'react-icons/fa';
 import './About.css';
 
 const About = () => {
@@ -70,6 +71,24 @@ const About = () => {
               mobile solutions.
             </p>
           </div>
+
+          <motion.div 
+            variants={itemVariants}
+            className="achievement-badge"
+            whileHover={{ scale: 1.02, y: -5 }}
+          >
+            <div className="achievement-icon-wrapper">
+              <FaTrophy className="achievement-trophy-icon" />
+            </div>
+            <div className="achievement-content-wrapper">
+              <h3 className="achievement-title">Extra Mile Award 2025</h3>
+              <p className="achievement-company">Uncanny Consulting Services LLP</p>
+              <p className="achievement-description">
+                Certificate of Appreciation for exceptional dedication, proactive effort, 
+                and consistently going above and beyond expectations.
+              </p>
+            </div>
+          </motion.div>
 
           <motion.div 
             className="about-stats"

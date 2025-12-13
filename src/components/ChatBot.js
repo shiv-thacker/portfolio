@@ -29,7 +29,7 @@ const ChatBot = ({ isOpen, setIsOpen }) => {
     role: "React Native Developer",
     email: "shivangthacker555@gmail.com",
     phone: "+91 8320567250",
-    location: "Rajkot, Gujarat, India - 360005",
+    location: "Ahmedabad, Gujarat, India - 360005",
     linkedin: "https://www.linkedin.com/in/shivang-thacker-4b1a481b9/",
     
     // Skills
@@ -65,7 +65,15 @@ const ChatBot = ({ isOpen, setIsOpen }) => {
       "Collaborated with clients and backend developers for seamless integration",
       "Implemented scalable code architectures (MVVM, Clean Architecture)",
       "Published apps on Google Play Store and Apple App Store"
-    ]
+    ],
+    
+    // Awards & Recognition
+    award: {
+      title: "Extra Mile Award 2025",
+      company: "Uncanny Consulting Services LLP",
+      description: "Certificate of Appreciation for exceptional dedication, proactive effort, and consistently going above and beyond expectations.",
+      year: "2025"
+    }
   };
 
   const generateResponse = (userMessage) => {
@@ -93,7 +101,7 @@ const ChatBot = ({ isOpen, setIsOpen }) => {
     
     // Experience
     if (message.includes('experience') || message.includes('work') || message.includes('job') || message.includes('company')) {
-      return `Shivang currently works as a ${knowledgeBase.currentRole} at ${knowledgeBase.currentCompany} (${knowledgeBase.currentDuration}).\n\nHe has ${knowledgeBase.totalExperience} of professional experience building cross-platform mobile applications. Previously, he worked at Jamrio Technologies and has done extensive independent development.\n\nKey achievements include leading development of 4+ production apps, managing entire app lifecycles, and collaborating with international clients.`;
+      return `Shivang currently works as a ${knowledgeBase.currentRole} at ${knowledgeBase.currentCompany} (${knowledgeBase.currentDuration}).\n\nHe has ${knowledgeBase.totalExperience} of professional experience building cross-platform mobile applications. Previously, he worked at Jamrio Technologies and has done extensive independent development.\n\nKey achievements include leading development of 4+ production apps, managing entire app lifecycles, and collaborating with international clients.\n\n🏆 In recognition of his exceptional work, he received the ${knowledgeBase.award.title} (${knowledgeBase.award.year}) from ${knowledgeBase.award.company}.`;
     }
     
     // Projects
@@ -124,7 +132,12 @@ const ChatBot = ({ isOpen, setIsOpen }) => {
     // Achievements
     if (message.includes('achievement') || message.includes('accomplish') || message.includes('success')) {
       const achievementList = knowledgeBase.achievements.map((a, i) => `${i + 1}. ${a}`).join('\n');
-      return `Shivang's key achievements include:\n\n${achievementList}\n\nHe's a proven track record of delivering high-quality mobile solutions!`;
+      return `Shivang's key achievements include:\n\n${achievementList}\n\n🏆 **Award Recognition:**\n${knowledgeBase.award.title} (${knowledgeBase.award.year}) from ${knowledgeBase.award.company}\n${knowledgeBase.award.description}\n\nHe has a proven track record of delivering high-quality mobile solutions!`;
+    }
+    
+    // Award/Recognition
+    if (message.includes('award') || message.includes('recognition') || message.includes('certificate') || message.includes('extra mile')) {
+      return `🏆 **${knowledgeBase.award.title}**\n\nShivang received the ${knowledgeBase.award.title} in ${knowledgeBase.award.year} from ${knowledgeBase.award.company}.\n\n${knowledgeBase.award.description}\n\nThis award recognizes his exceptional dedication, proactive effort, and consistently going above and beyond expectations in his work.`;
     }
     
     // Location
@@ -158,7 +171,7 @@ const ChatBot = ({ isOpen, setIsOpen }) => {
     }
     
     // Default response with suggestions
-    return `I'm not sure I understood that. Here are some things you can ask me:\n\n• "What are Shivang's skills?"\n• "Tell me about his experience"\n• "What projects has he built?"\n• "What's his education background?"\n• "How can I contact him?"\n• "Is he available for hire?"\n\nWhat would you like to know?`;
+    return `I'm not sure I understood that. Here are some things you can ask me:\n\n• "What are Shivang's skills?"\n• "Tell me about his experience"\n• "What projects has he built?"\n• "What's his education background?"\n• "Tell me about his achievements"\n• "What awards has he received?"\n• "How can I contact him?"\n• "Is he available for hire?"\n\nWhat would you like to know?`;
   };
 
   const handleSend = () => {
@@ -197,6 +210,7 @@ const ChatBot = ({ isOpen, setIsOpen }) => {
     "What are your skills?",
     "Tell me about your projects",
     "What's your experience?",
+    "Tell me about your achievements",
     "How can I contact you?"
   ];
 
