@@ -20,9 +20,9 @@ function App() {
       <Hero />
       <About />
       <Achievements />
-      <Skills />
       <Experience />
       <Projects />
+      <Skills />
       <Education />
       <Contact />
       <ChatBot isOpen={isChatOpen} setIsOpen={setIsChatOpen} />

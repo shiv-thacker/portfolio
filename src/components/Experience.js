@@ -12,110 +12,149 @@ const Experience = () => {
 
   const experiences = [
     {
-      company: 'Uncanny Consulting Services',
-      role: 'React Native & Flutter Developer',
+      company: 'Uncanny Consulting Services LLP',
+      role: 'Mobile Application Developer (React Native & Flutter)',
       duration: 'May 2024 - Present',
-      location: 'Remote',
+      location: 'Ahmedabad, Gujarat',
       projects: [
         {
-          name: 'OMNIYAT (Luxury Real Estate Concierge App)',
-          description: 'A renowned real estate developer in Dubai. The OMNIYAT Concierge App provides residents with seamless access to services like valet, laundry, luggage assistance, maintenance requests, restaurant reservations, spa bookings, billing, and 24/7 chat support.',
+          name: 'OMNIYAT — Luxury Real Estate Concierge App',
+          period: 'Jan 2025 - Present',
+          description:
+            'Concierge mobile app for OMNIYAT, a luxury real estate developer in Dubai, giving residents access to valet, laundry, maintenance, restaurant and spa bookings, billing, and 24/7 support.',
           achievements: [
-            'Developed the entire mobile app from scratch using Flutter',
-            'Integrated AI native flow in Cursor',
-            'Solely responsible for the mobile app development lifecycle',
-            'Actively participated in daily client meetings (1 PM IST)',
-            'Managed the backend team and developed the admin panel'
-          ]
+            'Built the Flutter app from scratch (0→1) as sole mobile developer',
+            'Designed and implemented service booking, billing, and in-app chat modules',
+            'Led daily client syncs and coordinated mobile requirements with backend and admin teams',
+            'Currently in UAT; preparing for production release on iOS and Android',
+          ],
         },
         {
-          name: 'Syra Coffee (E-commerce App)',
-          description: 'E-commerce mobile application for coffee products, enabling users to browse, order, and purchase premium coffee products with seamless shopping experience.',
+          name: 'Intern Mentorship — AI OCR Application',
+          period: '2024 - Present',
+          description:
+            'Technical mentor to 2 mobile development interns at Uncanny Consulting Services, supporting their growth through hands-on guidance and project delivery.',
           achievements: [
-            'Took over and managed an already created project',
-            'Collaborated with team members to enhance and maintain the application',
-            'Developed e-commerce features including product catalog, shopping cart, and checkout',
-            'Skills Gained: Supabase integration, GraphQL implementation, team collaboration'
-          ]
+            'Mentored 2 interns on React Native development, code quality, and Agile delivery practices',
+            'Guided one intern through the full implementation of an AI-based OCR mobile application',
+            'Led code reviews, architecture discussions, and sprint planning to ensure production-ready output',
+            'Helped interns take ownership of features from design through testing and deployment',
+          ],
+        },
+        {
+          name: 'Primp & Blow — Salon Booking App',
+          period: 'May 2024 - Oct 2024',
+          description:
+            'Cross-platform appointment booking app for a U.S.-based salon chain offering blowouts, makeup, and hair extension services.',
+          achievements: [
+            'Developed and shipped the React Native app for iOS and Android',
+            'Integrated Booker.io API for appointment scheduling and service management',
+            'Implemented biometric login (Face ID / fingerprint) with secure credential storage via Keychain',
+            'Published to Google Play Store and Apple App Store',
+          ],
+        },
+        {
+          name: 'Syra Coffee — E-commerce App',
+          period: 'Nov 2024 - Present',
+          description:
+            'E-commerce mobile app for premium coffee products with product catalog, cart, and checkout flows.',
+          achievements: [
+            'Took ownership of an existing codebase and led ongoing feature development and maintenance',
+            'Built and enhanced catalog, cart, and checkout using Supabase and GraphQL',
+            'Collaborated with designers and backend engineers to improve app stability and UX',
+            'App live on the Apple App Store',
+          ],
         },
         {
           name: 'OTR (On Target Romance)',
-          description: 'A specialized platform designed for romance authors, beta readers, bloggers, and vendors to connect and manage their own events.',
+          period: 'Aug 2024 - Mar 2025',
+          description:
+            'Community platform for romance authors, beta readers, bloggers, and vendors to connect and manage events.',
           achievements: [
-            'Took over and restructured a messy third-party codebase',
-            'Debugging and refactoring existing code structures',
-            'Solely managed the entire mobile app development lifecycle',
-            'Skills Gained: Braintree payment gateway, messaging, push notifications, document picker and social authentication'
-          ]
+            'Inherited a legacy React Native codebase; refactored architecture and resolved critical bugs',
+            'Integrated Braintree payments, push notifications, document picker, and social authentication',
+            'Owned the full mobile lifecycle from debugging through feature delivery',
+          ],
         },
-        {
-          name: 'Primp & Blow (Salon Booking App)',
-          description: 'A salon booking app for a U.S.-based chain allowing users to book appointments for services like blowouts, makeup, and hair extensions.',
-          achievements: [
-            'Developed a cross-platform app for salon appointment booking',
-            'Integrated with Booker.io E-commerce management API',
-            'Published on both Google Play Store and Apple App Store',
-            'Skills Gained: Biometric login with Face ID and Fingerprint, secure credentials using React Native Keychain'
-          ]
-        },
-      ]
+      ],
     },
     {
       company: 'Jamrio Technologies Private Limited',
-      role: 'React Native Intern & React Native Developer',
+      role: 'React Native Developer',
       duration: 'Sep 2023 - May 2024',
       location: 'Rajkot, Gujarat',
       projects: [
         {
           name: 'Jamrio Community App',
-          description: 'A social networking platform like Instagram that empowers musicians, photographers, dancers, and other artists to connect and showcase their talents.',
+          period: 'Sep 2023 - May 2024',
+          description:
+            'Social networking app for musicians, photographers, dancers, and artists to share content and connect with their audience.',
           achievements: [
-            'Leading mobile app development for a community-based content platform',
-            'Responsible for bug fixing, feature updates, and performance optimization',
-            'Managed entire app development lifecycle from frontend perspective',
-            'Skills Gained: Redux for state management, Real-time communication with WebSockets, Push notifications'
-          ]
-        }
-      ]
+            'Joined as intern and progressed to lead mobile development on the community platform',
+            'Implemented Redux state management, WebSocket-based real-time features, and push notifications',
+            'Delivered bug fixes, feature updates, and performance improvements across releases',
+            'Managed the mobile frontend lifecycle from development through deployment',
+          ],
+        },
+      ],
     },
     {
-      company: 'Independent Software Development',
-      role: 'React Native Developer (Sole Mobile App Developer)',
+      company: 'Independent Mobile Development',
+      role: 'React Native Developer',
       duration: 'May 2023 - Sep 2023',
-      location: 'Freelance',
+      location: 'Remote · Freelance',
       projects: [
         {
-          name: 'Personal Projects',
-          description: 'Developed multiple full-stack mobile applications independently.',
+          name: 'EVC Finder — EV Charging Locator',
+          period: 'Jul 2023 - Sep 2023',
+          description:
+            'Mobile app helping electric vehicle owners locate nearby charging stations using maps and geolocation.',
           achievements: [
-            'EVC Finder - Electric vehicle charging station locator',
-            'Dating Fullstack App - Dating app with chat, swipe, like, dislike, subscription',
-            'Firebase Chat App - Real-time messaging app',
-            'Amazon Clone - E-commerce app',
-            'Social Media App - Full-stack social platform with React native/Nodejs',
-            'Noise Detector - Environment noise detection and visualization'
-          ]
-        }
-      ]
-    }
+            'Built end-to-end with React Native, Google Maps API, and Firebase',
+            'Implemented real-time location tracking and station search with distance filtering',
+          ],
+        },
+        {
+          name: 'Social Media App (Full-Stack)',
+          period: 'Jun 2023 - Aug 2023',
+          description:
+            'Full-stack social platform with posts, likes, comments, and user profiles.',
+          achievements: [
+            'Developed React Native frontend and Node.js/MongoDB backend',
+            'Integrated AWS for media storage and Redux for client-side state management',
+          ],
+        },
+        {
+          name: 'Amazon Clone — E-commerce App',
+          period: 'May 2023 - Jul 2023',
+          description:
+            'E-commerce prototype with product listings, shopping cart, and Stripe checkout.',
+          achievements: [
+            'Implemented catalog browsing, cart management, and payment integration',
+            'Built with React Native, Node.js, MongoDB, and Redux',
+          ],
+        },
+      ],
+    },
   ];
 
   const keyAchievements = [
-    'Led end-to-end development of 4 fully functional cross-platform mobile applications',
-    'Owned the entire mobile app lifecycle, including requirements gathering, architecture design, development, testing, and publishing',
-    'Collaborated closely with clients and backend developers to align mobile features with business needs',
-    'Estimated project timelines and deliverables, enabling transparent client communication',
-    'Implemented scalable code architectures (MVVM, Clean Architecture)',
-    'Performed thorough manual testing and debugging',
-    'Maintained high code quality, app performance, and stability across multiple OS versions'
+    'Delivered 5+ production mobile applications using React Native and Flutter',
+    'Mentored 2 interns — one delivered a full AI-based OCR mobile application end to end',
+    'Owned end-to-end mobile lifecycles — requirements, architecture, development, testing, and store publishing',
+    'Shipped apps to Google Play Store and Apple App Store with biometric auth and payment integrations',
+    'Collaborated with clients and cross-functional teams through Agile/Scrum ceremonies and daily standups',
+    'Applied MVVM and Clean Architecture patterns for scalable, maintainable codebases',
+    'Refactored legacy codebases, improving stability and enabling faster feature delivery',
+    'Recognized with the Extra Mile Award 2025 at Uncanny Consulting Services LLP',
   ];
 
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: { staggerChildren: 0.2 }
-    }
+      transition: { staggerChildren: 0.2 },
+    },
   };
 
   const itemVariants = {
@@ -123,8 +162,8 @@ const Experience = () => {
     visible: {
       x: 0,
       opacity: 1,
-      transition: { duration: 0.6 }
-    }
+      transition: { duration: 0.6 },
+    },
   };
 
   return (
@@ -134,14 +173,13 @@ const Experience = () => {
         className="experience-container"
         variants={containerVariants}
         initial="hidden"
-        animate={inView ? "visible" : "hidden"}
+        animate={inView ? 'visible' : 'hidden'}
       >
         <motion.div variants={itemVariants} className="section-header">
           <h2 className="section-title">Professional Experience</h2>
           <div className="section-line"></div>
         </motion.div>
 
-        {/* Key Achievements Section */}
         <motion.div variants={itemVariants} className="key-achievements">
           <h3 className="achievements-title">Key Responsibilities & Achievements</h3>
           <div className="achievements-grid">
@@ -161,14 +199,9 @@ const Experience = () => {
           </div>
         </motion.div>
 
-        {/* Timeline */}
         <div className="timeline">
           {experiences.map((exp, index) => (
-            <motion.div
-              key={index}
-              variants={itemVariants}
-              className="timeline-item"
-            >
+            <motion.div key={index} variants={itemVariants} className="timeline-item">
               <div className="timeline-marker">
                 <motion.div
                   className="timeline-icon"
@@ -180,10 +213,7 @@ const Experience = () => {
                 {index < experiences.length - 1 && <div className="timeline-line" />}
               </div>
 
-              <motion.div
-                className="timeline-content"
-                whileHover={{ scale: 1.02 }}
-              >
+              <motion.div className="timeline-content" whileHover={{ scale: 1.02 }}>
                 <div className="experience-header">
                   <div>
                     <h3 className="company-name">{exp.company}</h3>
@@ -202,11 +232,16 @@ const Experience = () => {
                       className="project-card"
                       initial={{ opacity: 0 }}
                       animate={inView ? { opacity: 1 } : { opacity: 0 }}
-                      transition={{ delay: (index * 0.3) + (pIndex * 0.2) }}
+                      transition={{ delay: index * 0.3 + pIndex * 0.2 }}
                     >
-                      <h4 className="project-name">{project.name}</h4>
+                      <div className="project-header">
+                        <h4 className="project-name">{project.name}</h4>
+                        {project.period && (
+                          <span className="project-period">{project.period}</span>
+                        )}
+                      </div>
                       <p className="project-description">{project.description}</p>
-                      
+
                       <div className="project-achievements">
                         {project.achievements.map((achievement, aIndex) => (
                           <motion.div
@@ -214,7 +249,9 @@ const Experience = () => {
                             className="achievement-bullet"
                             initial={{ opacity: 0, x: -10 }}
                             animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -10 }}
-                            transition={{ delay: (index * 0.3) + (pIndex * 0.2) + (aIndex * 0.1) }}
+                            transition={{
+                              delay: index * 0.3 + pIndex * 0.2 + aIndex * 0.1,
+                            }}
                           >
                             <span className="bullet">•</span>
                             <span>{achievement}</span>
@@ -234,4 +271,3 @@ const Experience = () => {
 };
 
 export default Experience;
-

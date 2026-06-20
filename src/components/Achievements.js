@@ -100,7 +100,7 @@ const Achievements = () => {
             <div className="achievement-content">
               <h3 className="achievement-title">Award Ceremony</h3>
               <p className="achievement-description">
-                Recognition ceremony for the Extra Mile Award 2025, presented by the CEO 
+                Recognition ceremony for the Extra Mile Award 2025, presented by the CTO 
                 of Uncanny Consulting Services LLP.
               </p>
               <div className="achievement-badge">

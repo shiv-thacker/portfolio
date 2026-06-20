@@ -26,33 +26,33 @@ const ChatBot = ({ isOpen, setIsOpen }) => {
   const knowledgeBase = {
     // Personal Info
     name: "Shivang Thacker",
-    role: "React Native Developer",
+    role: "Mobile Application Developer",
     email: "shivangthacker555@gmail.com",
     phone: "+91 8320567250",
-    location: "Ahmedabad, Gujarat, India - 360005",
+    location: "Ahmedabad, Gujarat, India",
     linkedin: "https://www.linkedin.com/in/shivang-thacker-4b1a481b9/",
     
     // Skills
     skills: [
-      "React Native", "Expo", "ReactJS", "ES2016 JavaScript", "Redux", "NodeJS",
-      "MongoDB", "ExpressJS", "Firebase", "AWS", "Flutter", "Android", "iOS",
-      "UI/UX Design", "Scrum/Agile", "Git"
+      "React Native", "Flutter", "Expo", "Redux", "Node.js", "MongoDB",
+      "Firebase", "Supabase", "GraphQL", "AWS", "Braintree", "Git", "Agile/Scrum"
     ],
     
     // Experience
-    currentCompany: "Uncanny Consulting Services",
-    currentRole: "React Native & Flutter Developer",
+    currentCompany: "Uncanny Consulting Services LLP",
+    currentRole: "Mobile Application Developer (React Native & Flutter)",
     currentDuration: "May 2024 - Present",
     totalExperience: "2+ years",
     
     // Projects
     projects: {
-      omniyat: "OMNIYAT Concierge App - Luxury real estate concierge app for Dubai residents. Built from scratch using Flutter with AI integration.",
-      otr: "On Target Romance (OTR) - Community platform for romance authors with Braintree payment integration and social authentication.",
-      primpblow: "Primp & Blow - Salon booking app for U.S.-based chain with biometric authentication (Face ID/Fingerprint) and Booker.io API integration.",
-      jamrio: "Jamrio Community App - Social networking platform for artists with Redux, WebSockets, and real-time features.",
-      syracoffee: "Syra Coffee - E-commerce mobile application for coffee products built with React Native, Supabase, and GraphQL. Managed an already created project with team collaboration.",
-      personal: "Personal projects include EVC Finder, Dating App, Firebase Chat App, Amazon Clone, Social Media App, and Noise Detector."
+      omniyat: "OMNIYAT Concierge App — Luxury real estate concierge app for Dubai residents. Built from scratch in Flutter as sole mobile developer. Currently in UAT.",
+      primpblow: "Primp & Blow — Salon booking app for a U.S.-based chain with Booker.io API, biometric auth, and App Store / Play Store release.",
+      syracoffee: "Syra Coffee — E-commerce coffee app with React Native, Supabase, and GraphQL. Live on the Apple App Store.",
+      otr: "On Target Romance (OTR) — Community platform for romance authors. Refactored legacy React Native codebase; integrated Braintree payments and social auth.",
+      jamrio: "Jamrio Community App — Social networking platform for artists with Redux, WebSockets, and push notifications.",
+      mentorship: "Intern Mentorship — Mentored 2 mobile development interns at Uncanny Consulting. Guided one intern through the full delivery of an AI-based OCR mobile application.",
+      personal: "Personal projects include EVC Finder, Social Media App, Amazon Clone, Firebase Chat App, and Noise Detector."
     },
     
     // Education
@@ -60,12 +60,15 @@ const ChatBot = ({ isOpen, setIsOpen }) => {
     
     // Key Achievements
     achievements: [
-      "Led end-to-end development of 4+ fully functional cross-platform mobile applications",
-      "Owned entire mobile app lifecycle from concept to deployment",
-      "Collaborated with clients and backend developers for seamless integration",
-      "Implemented scalable code architectures (MVVM, Clean Architecture)",
-      "Published apps on Google Play Store and Apple App Store"
+      "Delivered 5+ production mobile applications using React Native and Flutter",
+      "Mentored 2 interns — one delivered a full AI-based OCR mobile application",
+      "Owned end-to-end mobile lifecycles from requirements through store publishing",
+      "Shipped apps to Google Play Store and Apple App Store",
+      "Applied MVVM and Clean Architecture for scalable codebases",
+      "Extra Mile Award 2025 at Uncanny Consulting Services LLP"
     ],
+    
+    mentorship: "Shivang mentors 2 mobile development interns at Uncanny Consulting Services LLP. He guides them on React Native, code quality, and Agile delivery — including one intern who implemented a full AI-based OCR mobile application.",
     
     // Awards & Recognition
     award: {
@@ -96,12 +99,17 @@ const ChatBot = ({ isOpen, setIsOpen }) => {
     
     // Skills
     if (message.includes('skill') || message.includes('technology') || message.includes('tech stack') || message.includes('know')) {
-      return `Shivang is proficient in:\n\n**Frontend & Mobile:** ${knowledgeBase.skills.slice(0, 6).join(', ')}\n\n**Backend:** ${knowledgeBase.skills.slice(6, 11).join(', ')}\n\n**Tools:** ${knowledgeBase.skills.slice(11).join(', ')}\n\nHe's particularly strong in React Native development and has delivered 4+ production apps!`;
+      return `Shivang is proficient in:\n\n**Mobile:** ${knowledgeBase.skills.slice(0, 4).join(', ')}\n\n**Backend & Services:** ${knowledgeBase.skills.slice(4, 11).join(', ')}\n\n**Tools:** ${knowledgeBase.skills.slice(11).join(', ')}\n\nHe has delivered 5+ production mobile apps across React Native and Flutter.`;
     }
     
     // Experience
     if (message.includes('experience') || message.includes('work') || message.includes('job') || message.includes('company')) {
-      return `Shivang currently works as a ${knowledgeBase.currentRole} at ${knowledgeBase.currentCompany} (${knowledgeBase.currentDuration}).\n\nHe has ${knowledgeBase.totalExperience} of professional experience building cross-platform mobile applications. Previously, he worked at Jamrio Technologies and has done extensive independent development.\n\nKey achievements include leading development of 4+ production apps, managing entire app lifecycles, and collaborating with international clients.\n\n🏆 In recognition of his exceptional work, he received the ${knowledgeBase.award.title} (${knowledgeBase.award.year}) from ${knowledgeBase.award.company}.`;
+      return `Shivang currently works as a ${knowledgeBase.currentRole} at ${knowledgeBase.currentCompany} (${knowledgeBase.currentDuration}).\n\nHe has ${knowledgeBase.totalExperience} of professional experience building cross-platform mobile applications for clients in India, the U.S., and the UAE. He also mentors 2 mobile development interns, including one who built a full AI-based OCR application.\n\n🏆 He received the ${knowledgeBase.award.title} (${knowledgeBase.award.year}) from ${knowledgeBase.award.company}.`;
+    }
+
+    // Mentorship
+    if (message.includes('mentor') || message.includes('intern') || message.includes('ocr')) {
+      return `**Intern Mentorship:**\n${knowledgeBase.mentorship}\n\n${knowledgeBase.projects.mentorship}`;
     }
     
     // Projects
@@ -110,7 +118,7 @@ const ChatBot = ({ isOpen, setIsOpen }) => {
         return `**OMNIYAT Concierge App:**\n${knowledgeBase.projects.omniyat}\n\nThis was built from scratch and showcases Shivang's ability to handle complex, high-end applications for luxury real estate.`;
       }
       if (message.includes('otr') || message.includes('romance')) {
-        return `**On Target Romance (OTR):**\n${knowledgeBase.projects.otr}\n\nShivang restructured a messy codebase and implemented payment gateway integration.`;
+        return `**On Target Romance (OTR):**\n${knowledgeBase.projects.otr}\n\nShivang inherited a legacy codebase, refactored it, and integrated Braintree payments.`;
       }
       if (message.includes('primp') || message.includes('salon')) {
         return `**Primp & Blow:**\n${knowledgeBase.projects.primpblow}\n\nPublished on both iOS and Android with advanced biometric authentication.`;
@@ -121,7 +129,10 @@ const ChatBot = ({ isOpen, setIsOpen }) => {
       if (message.includes('syra') || message.includes('coffee')) {
         return `**Syra Coffee:**\n${knowledgeBase.projects.syracoffee}\n\nShivang took over and managed this e-commerce project, demonstrating strong team collaboration skills.`;
       }
-      return `Shivang has worked on several impressive projects:\n\n1. **OMNIYAT** - Luxury concierge app (Flutter)\n2. **OTR** - Author networking platform\n3. **Primp & Blow** - Salon booking app\n4. **Jamrio** - Social platform for artists\n5. **Syra Coffee** - E-commerce coffee app (React Native, Supabase, GraphQL)\n\nHe's also built 6+ personal projects including dating apps, e-commerce clones, and utility apps. Would you like details about any specific project?`;
+      if (message.includes('ocr') || message.includes('intern') || message.includes('mentor')) {
+        return `**Intern Mentorship — AI OCR App:**\n${knowledgeBase.projects.mentorship}`;
+      }
+      return `Shivang has worked on several production projects:\n\n1. **OMNIYAT** — Luxury concierge app (Flutter, in UAT)\n2. **Intern Mentorship** — AI-based OCR app (guided intern delivery)\n3. **Primp & Blow** — Salon booking (App Store & Play Store)\n4. **Syra Coffee** — E-commerce coffee app (Live)\n5. **OTR** — Author networking platform\n6. **Jamrio** — Social platform for artists\n\nHe has also built personal projects including EVC Finder, e-commerce apps, and chat apps. Would you like details about any specific project?`;
     }
     
     // Education
@@ -157,7 +168,7 @@ const ChatBot = ({ isOpen, setIsOpen }) => {
     
     // React Native specific
     if (message.includes('react native')) {
-      return `React Native is Shivang's primary expertise! He has:\n• 2+ years of React Native development\n• Built 4+ production apps using React Native\n• Experience with Expo, Redux, navigation, and native modules\n• Published apps on both iOS and Android stores\n• Integrated complex features like biometric auth, payments, real-time chat\n\nHe's highly skilled in creating performant, cross-platform mobile applications.`;
+      return `React Native is Shivang's primary expertise! He has:\n• 2+ years of React Native development\n• Built 5+ production apps using React Native\n• Experience with Expo, Redux, navigation, and native modules\n• Published apps on both iOS and Android stores\n• Integrated biometric auth, payments, real-time chat, and GraphQL/Supabase\n\nHe's also proficient in Flutter, having built the OMNIYAT app from scratch.`;
     }
     
     // Flutter

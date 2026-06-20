@@ -30,10 +30,10 @@ const About = () => {
   };
 
   const stats = [
-    { number: '4+', label: 'Apps Delivered' },
+    { number: '5+', label: 'Production Apps' },
     { number: '2+', label: 'Years Experience' },
-    { number: '5+', label: 'Projects Completed' },
-    { number: '100%', label: 'Client Satisfaction' },
+    { number: '10+', label: 'Projects Completed' },
+    { number: '2', label: 'Interns Mentored' },
   ];
 
   return (
@@ -59,16 +59,17 @@ const About = () => {
                 transition={{ duration: 3, repeat: Infinity, repeatType: 'reverse' }}
                 className="highlight"
               >
-                Mobile App Developer
+                Mobile Application Developer
               </motion.span>{' '}
-              with a proven track record of delivering high-quality cross-platform 
-              applications using JavaScript frameworks (e.g., React Native). 
+              with 2+ years of experience building and shipping cross-platform apps
+              in React Native and Flutter for clients in India, the U.S., and the UAE.
             </p>
             <p className="about-description">
-              Skilled in <strong>Agile/Scrum practices</strong>, end-to-end app development, 
-              and collaborating with clients and teams. A self-starter, problem solver, 
-              and fast learner, passionate about building scalable and maintainable 
-              mobile solutions.
+              Experienced in <strong>Agile/Scrum</strong>, end-to-end mobile delivery,
+              and client collaboration. Published apps on the App Store and Play Store.
+              <strong> Mentor to 2 interns</strong>, including one who built a full
+              AI-based OCR mobile application. Recognized with the{' '}
+              <strong>Extra Mile Award 2025</strong> at Uncanny Consulting Services LLP.
             </p>
           </div>
 
@@ -120,36 +121,47 @@ const About = () => {
         </motion.div>
 
         <motion.div variants={itemVariants} className="about-highlights">
-          <motion.div 
+          <motion.div
             className="highlight-card"
             whileHover={{ scale: 1.02, x: 10 }}
           >
-            <div className="highlight-icon">🚀</div>
+            <div className="highlight-icon">⚛️</div>
             <div className="highlight-text">
-              <h3>Fast Learner</h3>
-              <p>Quickly adapt to new technologies and frameworks</p>
+              <h3>React Native</h3>
+              <p>Cross-platform mobile apps with production store releases</p>
             </div>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             className="highlight-card"
             whileHover={{ scale: 1.02, x: 10 }}
           >
-            <div className="highlight-icon">💡</div>
+            <div className="highlight-icon">💙</div>
             <div className="highlight-text">
-              <h3>Problem Solver</h3>
-              <p>Tackle complex challenges with innovative solutions</p>
+              <h3>Flutter</h3>
+              <p>Native-performance apps built from scratch for iOS and Android</p>
             </div>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             className="highlight-card"
             whileHover={{ scale: 1.02, x: 10 }}
           >
-            <div className="highlight-icon">🤝</div>
+            <div className="highlight-icon">🎨</div>
             <div className="highlight-text">
-              <h3>Team Player</h3>
-              <p>Collaborate effectively with clients and developers</p>
+              <h3>FlutterFlow</h3>
+              <p>Visual app development and rapid UI prototyping</p>
+            </div>
+          </motion.div>
+
+          <motion.div
+            className="highlight-card"
+            whileHover={{ scale: 1.02, x: 10 }}
+          >
+            <div className="highlight-icon">🤖</div>
+            <div className="highlight-text">
+              <h3>Agentic Coding</h3>
+              <p>AI-assisted development for faster, smarter delivery</p>
             </div>
           </motion.div>
         </motion.div>

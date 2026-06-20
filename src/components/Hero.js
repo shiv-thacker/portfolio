@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { TypeAnimation } from 'react-type-animation';
 import { FaGithub, FaLinkedin, FaEnvelope, FaPhone } from 'react-icons/fa';
 import './Hero.css';
 
@@ -89,30 +88,14 @@ const Hero = () => {
           SHIVANG THACKER
         </motion.h1>
 
-        <motion.div variants={itemVariants} className="hero-title">
-          <TypeAnimation
-            sequence={[
-              'React Native Developer',
-              2000,
-              'Mobile App Developer',
-              2000,
-              'Fast Learner',
-              2000,
-              'Team Player',
-              2000,
-              'Trouble shooter',
-              2000,
-            ]}
-            wrapper="span"
-            speed={50}
-            repeat={Infinity}
-          />
-        </motion.div>
+        <motion.p variants={itemVariants} className="hero-title">
+          React Native · Flutter · FlutterFlow · Vibe Coder
+        </motion.p>
 
         <motion.p variants={itemVariants} className="hero-description">
-          Mobile App Developer with a proven track record of delivering high-quality
-          cross-platform applications. Passionate about building scalable and 
-          maintainable mobile solutions.
+          Mobile Application Developer with 2+ years of experience delivering
+          production-ready cross-platform apps in React Native and Flutter.
+          Mentor to 2 interns — one built a full AI-based OCR app. Extra Mile Award 2025.
         </motion.p>
 
         <motion.div variants={itemVariants} className="hero-contact-info">

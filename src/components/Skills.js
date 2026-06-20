@@ -130,10 +130,9 @@ const Skills = () => {
           <h3 className="tech-title">All Technologies</h3>
           <div className="tech-tags">
             {[
-              'React Native', 'Expo', 'ReactJS', 'ES2016 JavaScript', 'UI/UX Design',
-              'Redux', 'NodeJS', 'MongoDB', 'ExpressJS', 'Axios', 'Firebase', 'AWS',
-              'Android', 'Android Studio', 'IOS', 'X-code', 'Scrum', 'Git', 'Flutter',
-              'Cursor AI'
+              'React Native', 'Flutter', 'Expo', 'Redux', 'GraphQL', 'Supabase',
+              'Node.js', 'MongoDB', 'Firebase', 'Braintree', 'AWS',
+              'Android', 'iOS', 'Git', 'Agile/Scrum'
             ].map((tech, index) => (
               <motion.span
                 key={tech}

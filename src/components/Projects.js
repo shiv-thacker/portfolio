@@ -13,129 +13,136 @@ const Projects = () => {
   const [filter, setFilter] = useState('all');
 
   const projects = [
-   
     {
       title: 'OMNIYAT Concierge App',
       category: 'professional',
-      description: 'Luxury real estate concierge app for Dubai residents providing services like valet, laundry, maintenance, restaurant reservations, spa bookings, and 24/7 chat support.',
-      tech: ['Flutter', 'Firebase', 'AI Integration', 'Cursor AI', 'Real-time Chat'],
+      description:
+        'Luxury real estate concierge app for Dubai residents — valet, laundry, maintenance, restaurant and spa bookings, billing, and 24/7 chat support.',
+      tech: ['Flutter', 'Firebase', 'Real-time Chat', 'REST APIs'],
       icon: '🏢',
       status: 'In UAT',
-      highlights: ['Built from scratch', 'AI native flow', 'Client collaboration'],
-      link: 'https://www.omniyat.com/'
-    },
-    {
-      title: 'Syra Coffee',
-      category: 'professional',
-      description: 'E-commerce mobile application for coffee products, enabling users to browse, order, and purchase premium coffee products with seamless shopping experience.',
-      tech: ['React Native', 'Supabase', 'GraphQL'],
-      icon: '☕',
-      status: 'Live',
-      highlights: ['Team collaboration', 'Already created project & handle it', 'E-commerce app'],
-      link: 'https://apps.apple.com/tr/app/syra-coffee/id1609933400'
-    },
-    {
-      title: 'On Target Romance (OTR)',
-      category: 'professional',
-      description: 'Community & networking platform for romance authors, beta readers, bloggers, and vendors to connect and manage events.',
-      tech: ['React Native', 'Braintree', 'Push Notifications', 'Document Picker'],
-      icon: '📚',
-      status: 'In Development',
-      highlights: ['Code restructuring', 'Payment integration', 'Social auth']
+      highlights: ['Built from scratch', 'Sole mobile developer', 'Client-facing delivery'],
+      link: 'https://www.omniyat.com/',
     },
     {
       title: 'Primp & Blow',
       category: 'professional',
-      description: 'Salon booking app for U.S.-based chain allowing appointment scheduling for blowouts, makeup, and hair extensions.',
+      description:
+        'Salon booking app for a U.S.-based chain — appointment scheduling for blowouts, makeup, and hair extensions.',
       tech: ['React Native', 'Booker.io API', 'Face ID', 'Keychain', 'iOS', 'Android'],
       icon: '💇‍♀️',
       status: 'Live',
-      highlights: ['Biometric auth', 'E-commerce integration', 'Cross-platform'],
-      link: 'https://apps.apple.com/ca/app/primp-and-blow/id921704948'
+      highlights: ['App Store & Play Store', 'Biometric auth', 'Payment integration'],
+      link: 'https://apps.apple.com/ca/app/primp-and-blow/id921704948',
+    },
+    {
+      title: 'Syra Coffee',
+      category: 'professional',
+      description:
+        'E-commerce app for premium coffee — product catalog, cart, checkout, and order management.',
+      tech: ['React Native', 'Supabase', 'GraphQL'],
+      icon: '☕',
+      status: 'Live',
+      highlights: ['Production maintenance', 'Supabase & GraphQL', 'E-commerce flows'],
+      link: 'https://apps.apple.com/tr/app/syra-coffee/id1609933400',
+    },
+    {
+      title: 'On Target Romance (OTR)',
+      category: 'professional',
+      description:
+        'Community platform for romance authors, beta readers, bloggers, and vendors to connect and manage events.',
+      tech: ['React Native', 'Braintree', 'Push Notifications', 'Social Auth'],
+      icon: '📚',
+      status: 'In Development',
+      highlights: ['Legacy refactor', 'Payment integration', 'Push notifications'],
     },
     {
       title: 'Jamrio Community App',
       category: 'professional',
-      description: 'Social networking platform empowering musicians, photographers, dancers, and artists to connect and showcase talents.',
-      tech: ['React Native', 'Redux', 'WebSockets', 'Push Notifications', 'Video Sharing'],
+      description:
+        'Social networking app for musicians, photographers, dancers, and artists to share content and grow their audience.',
+      tech: ['React Native', 'Redux', 'WebSockets', 'Push Notifications'],
       icon: '🎵',
       status: 'Live',
-      highlights: ['Real-time features', 'State management', 'Performance optimization'],
-      link: 'https://jamr-production.firebaseapp.com/'
+      highlights: ['Real-time features', 'Redux state management', 'Performance optimization'],
+      link: 'https://jamr-production.firebaseapp.com/',
     },
-   
     {
       title: 'EVC Finder',
       category: 'personal',
-      description: 'Electric vehicle charging station locator app helping EV owners find nearby charging stations.',
+      description:
+        'EV charging station locator helping owners find nearby stations with maps and geolocation.',
       tech: ['React Native', 'Google Maps API', 'Geolocation', 'Firebase'],
       icon: '⚡',
       status: 'Personal Project',
-      highlights: ['Maps integration', 'Real-time location'],
-      link: 'https://github.com/shiv-thacker/EV-charging-app'
-    },
-    {
-      title: 'Dating Fullstack App',
-      category: 'personal',
-      description: 'Complete dating application with chat, swipe, like, dislike, and subscription features.',
-      tech: ['React Native', 'Node.js', 'MongoDB', 'WebSockets', 'Stripe'],
-      icon: '💝',
-      status: 'Personal Project',
-      highlights: ['Full-stack', 'Real-time chat', 'Payment integration'],
-      link: 'https://github.com/shiv-thacker/date'
-    },
-    {
-      title: 'Firebase Chat App',
-      category: 'personal',
-      description: 'Real-time messaging application with Firebase backend.',
-      tech: ['React Native', 'Firebase', 'Real-time Database', 'Authentication'],
-      icon: '💬',
-      status: 'Personal Project',
-      highlights: ['Real-time messaging', 'Firebase integration'],
-      link: 'https://github.com/shiv-thacker/firebase_chat_application'
-    },
-    {
-      title: 'Amazon Clone',
-      category: 'personal',
-      description: 'E-commerce application clone with shopping cart, product listings, and checkout.',
-      tech: ['React Native', 'Node.js', 'MongoDB', 'Stripe', 'Redux'],
-      icon: '🛒',
-      status: 'Personal Project',
-      highlights: ['E-commerce features', 'Payment gateway'],
-      link: 'https://github.com/shiv-thacker/e-commers'
+      highlights: ['Maps integration', 'Real-time location', 'Firebase backend'],
+      link: 'https://github.com/shiv-thacker/EV-charging-app',
     },
     {
       title: 'Social Media App',
       category: 'personal',
-      description: 'Full-stack social media platform with post creation, likes, comments, and user profiles.',
+      description:
+        'Full-stack social platform with post creation, likes, comments, and user profiles.',
       tech: ['React Native', 'Node.js', 'MongoDB', 'AWS', 'Redux'],
       icon: '📱',
       status: 'Personal Project',
-      highlights: ['Full-stack', 'Social features', 'Cloud storage'],
-      link: 'https://github.com/shiv-thacker/socialmedia_frontend'
+      highlights: ['Full-stack', 'AWS media storage', 'Social features'],
+      link: 'https://github.com/shiv-thacker/socialmedia_frontend',
+    },
+    {
+      title: 'Amazon Clone',
+      category: 'personal',
+      description:
+        'E-commerce app with product listings, shopping cart, and Stripe checkout.',
+      tech: ['React Native', 'Node.js', 'MongoDB', 'Stripe', 'Redux'],
+      icon: '🛒',
+      status: 'Personal Project',
+      highlights: ['E-commerce flows', 'Stripe payments', 'Redux state'],
+      link: 'https://github.com/shiv-thacker/e-commers',
+    },
+    {
+      title: 'Firebase Chat App',
+      category: 'personal',
+      description: 'Real-time messaging app with Firebase authentication and database.',
+      tech: ['React Native', 'Firebase', 'Real-time Database', 'Authentication'],
+      icon: '💬',
+      status: 'Personal Project',
+      highlights: ['Real-time messaging', 'Firebase auth', 'Chat UI'],
+      link: 'https://github.com/shiv-thacker/firebase_chat_application',
     },
     {
       title: 'Noise Detector',
       category: 'personal',
-      description: 'Environment noise detection and visualization app measuring decibel levels.',
+      description:
+        'Environment noise detection app measuring and visualizing decibel levels.',
       tech: ['React Native', 'Audio API', 'Data Visualization'],
       icon: '🔊',
       status: 'Personal Project',
-      highlights: ['Audio processing', 'Data visualization'],
-      link: 'https://github.com/shiv-thacker/Noise_Detector'
-    }
+      highlights: ['Audio processing', 'Decibel measurement', 'Data visualization'],
+      link: 'https://github.com/shiv-thacker/Noise_Detector',
+    },
+    {
+      title: 'Dating Fullstack App',
+      category: 'personal',
+      description:
+        'Full-stack matching app with chat, swipe interactions, and subscription billing.',
+      tech: ['React Native', 'Node.js', 'MongoDB', 'WebSockets', 'Stripe'],
+      icon: '💝',
+      status: 'Personal Project',
+      highlights: ['Full-stack', 'Real-time chat', 'Stripe subscriptions'],
+      link: 'https://github.com/shiv-thacker/date',
+    },
   ];
 
-  const filteredProjects = filter === 'all' 
-    ? projects 
-    : projects.filter(p => p.category === filter);
+  const filteredProjects =
+    filter === 'all' ? projects : projects.filter((p) => p.category === filter);
 
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: { staggerChildren: 0.1 }
-    }
+      transition: { staggerChildren: 0.1 },
+    },
   };
 
   const itemVariants = {
@@ -143,8 +150,8 @@ const Projects = () => {
     visible: {
       y: 0,
       opacity: 1,
-      transition: { duration: 0.5 }
-    }
+      transition: { duration: 0.5 },
+    },
   };
 
   return (
@@ -154,13 +161,13 @@ const Projects = () => {
         className="projects-container"
         variants={containerVariants}
         initial="hidden"
-        animate={inView ? "visible" : "hidden"}
+        animate={inView ? 'visible' : 'hidden'}
       >
         <motion.div variants={itemVariants} className="section-header">
           <h2 className="section-title">Projects</h2>
           <div className="section-line"></div>
           <p className="section-subtitle">
-            Showcase of professional and personal mobile applications
+            Production apps and personal projects — React Native & Flutter
           </p>
         </motion.div>
 
@@ -264,4 +271,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
