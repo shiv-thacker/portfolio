@@ -168,6 +168,11 @@
   display: inline-block;
 }
 
+.btn svg {
+  vertical-align: -2px;
+  margin-right: 0.5rem;
+}
+
 .btn-primary {
   background: linear-gradient(135deg, #4a9eff, #357abd);
   color: #ffffff;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaEnvelope, FaPhone } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaPhone, FaPlay } from 'react-icons/fa';
 import './Hero.css';
 
 const Hero = () => {
@@ -124,6 +124,14 @@ const Hero = () => {
             whileTap={{ scale: 0.95 }}
           >
             Get In Touch
+          </motion.a>
+          <motion.a
+            href="#video"
+            className="btn btn-secondary"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <FaPlay /> Watch Video Intro
           </motion.a>
           <motion.a
             href="#projects"

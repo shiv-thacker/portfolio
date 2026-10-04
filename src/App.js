@@ -19,8 +19,8 @@ function App() {
     <div className="App">
       <Navbar />
       <Hero />
-      <About />
       <VideoIntro />
+      <About />
       <Achievements />
       <Experience />
       <Projects />
