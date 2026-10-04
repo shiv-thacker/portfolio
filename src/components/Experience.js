@@ -30,19 +30,31 @@ const Experience = () => {
           ],
         },
         {
-          name: 'Intern Mentorship — AI OCR Application',
+          name: 'Technical Mentorship — AI-Based OCR Application (Flutter)',
           period: '2024 - Present',
           description:
             'Technical mentor to 2 mobile development interns at Uncanny Consulting Services, supporting their growth through hands-on guidance and project delivery.',
           achievements: [
-            'Mentored 2 interns on React Native development, code quality, and Agile delivery practices',
+            'Mentored 2 interns on Flutter development, code quality, and Agile delivery practices',
             'Guided one intern through the full implementation of an AI-based OCR mobile application',
             'Led code reviews, architecture discussions, and sprint planning to ensure production-ready output',
             'Helped interns take ownership of features from design through testing and deployment',
           ],
         },
         {
-          name: 'Primp & Blow — Salon Booking App',
+          name: 'Syra Coffee — E-commerce App (Flutter)',
+          period: 'Nov 2024 - Present',
+          description:
+            'E-commerce mobile app for premium coffee products with product catalog, cart, and checkout flows.',
+          achievements: [
+            'Took ownership of an existing codebase and led ongoing feature development and maintenance',
+            'Built and enhanced catalog, cart, and checkout using Supabase and GraphQL',
+            'Collaborated with designers and backend engineers to improve app stability and UX',
+            'Shipped and maintained the live app on the Apple App Store',
+          ],
+        },
+        {
+          name: 'Primp & Blow — Salon Booking App (React Native)',
           period: 'May 2024 - Oct 2024',
           description:
             'Cross-platform appointment booking app for a U.S.-based salon chain offering blowouts, makeup, and hair extension services.',
@@ -54,19 +66,7 @@ const Experience = () => {
           ],
         },
         {
-          name: 'Syra Coffee — E-commerce App',
-          period: 'Nov 2024 - Present',
-          description:
-            'E-commerce mobile app for premium coffee products with product catalog, cart, and checkout flows.',
-          achievements: [
-            'Took ownership of an existing codebase and led ongoing feature development and maintenance',
-            'Built and enhanced catalog, cart, and checkout using Supabase and GraphQL',
-            'Collaborated with designers and backend engineers to improve app stability and UX',
-            'App live on the Apple App Store',
-          ],
-        },
-        {
-          name: 'OTR (On Target Romance)',
+          name: 'OTR (On Target Romance) (React Native)',
           period: 'Aug 2024 - Mar 2025',
           description:
             'Community platform for romance authors, beta readers, bloggers, and vendors to connect and manage events.',
@@ -99,39 +99,20 @@ const Experience = () => {
       ],
     },
     {
-      company: 'Independent Mobile Development',
-      role: 'React Native Developer',
+      company: 'SS Brothers (Self-Owned, Trademarked Business)',
+      role: 'Founder & Independent Mobile Developer',
       duration: 'May 2023 - Sep 2023',
-      location: 'Remote · Freelance',
+      location: 'Remote',
       projects: [
         {
-          name: 'EVC Finder — EV Charging Locator',
-          period: 'Jul 2023 - Sep 2023',
+          name: 'Independent App Publishing',
+          period: 'May 2023 - Sep 2023',
           description:
-            'Mobile app helping electric vehicle owners locate nearby charging stations using maps and geolocation.',
+            'Founded and ran SS Brothers as an independent mobile development business, handling the full app lifecycle solo — concept, design, development, and Play Store publishing.',
           achievements: [
-            'Built end-to-end with React Native, Google Maps API, and Firebase',
-            'Implemented real-time location tracking and station search with distance filtering',
-          ],
-        },
-        {
-          name: 'Social Media App (Full-Stack)',
-          period: 'Jun 2023 - Aug 2023',
-          description:
-            'Full-stack social platform with posts, likes, comments, and user profiles.',
-          achievements: [
-            'Developed React Native frontend and Node.js/MongoDB backend',
-            'Integrated AWS for media storage and Redux for client-side state management',
-          ],
-        },
-        {
-          name: 'Amazon Clone — E-commerce App',
-          period: 'May 2023 - Jul 2023',
-          description:
-            'E-commerce prototype with product listings, shopping cart, and Stripe checkout.',
-          achievements: [
-            'Implemented catalog browsing, cart management, and payment integration',
-            'Built with React Native, Node.js, MongoDB, and Redux',
+            'Independently designed, built, and published two mobile applications end-to-end: a live cricket scoring app and an affiliate marketing platform',
+            'Owned every stage of the product lifecycle as sole developer and founder, from initial concept through Play Store submission',
+            'Gained early founder-level experience in product ownership, self-directed delivery, and mobile app publishing prior to joining industry roles',
           ],
         },
       ],
@@ -139,7 +120,7 @@ const Experience = () => {
   ];
 
   const keyAchievements = [
-    'Delivered 5+ production mobile applications using React Native and Flutter',
+    'Delivered 4+ live production mobile applications (3 built from scratch) using React Native and Flutter',
     'Mentored 2 interns — one delivered a full AI-based OCR mobile application end to end',
     'Owned end-to-end mobile lifecycles — requirements, architecture, development, testing, and store publishing',
     'Shipped apps to Google Play Store and Apple App Store with biometric auth and payment integrations',

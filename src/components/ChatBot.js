@@ -42,16 +42,17 @@ const ChatBot = ({ isOpen, setIsOpen }) => {
     currentCompany: "Uncanny Consulting Services LLP",
     currentRole: "Mobile Application Developer (React Native & Flutter)",
     currentDuration: "May 2024 - Present",
-    totalExperience: "2+ years",
+    totalExperience: "3+ years",
     
     // Projects
     projects: {
       omniyat: "OMNIYAT Concierge App — Luxury real estate concierge app for Dubai residents. Built from scratch in Flutter as sole mobile developer. Currently in UAT.",
       primpblow: "Primp & Blow — Salon booking app for a U.S.-based chain with Booker.io API, biometric auth, and App Store / Play Store release.",
-      syracoffee: "Syra Coffee — E-commerce coffee app with React Native, Supabase, and GraphQL. Live on the Apple App Store.",
+      syracoffee: "Syra Coffee — E-commerce coffee app with Flutter, Supabase, and GraphQL. Live on the Apple App Store.",
       otr: "On Target Romance (OTR) — Community platform for romance authors. Refactored legacy React Native codebase; integrated Braintree payments and social auth.",
       jamrio: "Jamrio Community App — Social networking platform for artists with Redux, WebSockets, and push notifications.",
       mentorship: "Intern Mentorship — Mentored 2 mobile development interns at Uncanny Consulting. Guided one intern through the full delivery of an AI-based OCR mobile application.",
+      ssbrothers: "SS Brothers — Self-owned, trademarked business (May 2023 - Sep 2023). As founder and sole developer, Shivang designed, built, and published two apps to the Play Store: a live cricket scoring app and an affiliate marketing platform.",
       personal: "Personal projects include EVC Finder, Social Media App, Amazon Clone, Firebase Chat App, and Noise Detector."
     },
     
@@ -60,7 +61,9 @@ const ChatBot = ({ isOpen, setIsOpen }) => {
     
     // Key Achievements
     achievements: [
-      "Delivered 5+ production mobile applications using React Native and Flutter",
+      "Delivered 4+ live production mobile applications (3 built from scratch) using React Native and Flutter",
+      "Founded SS Brothers and self-published two apps on the Play Store",
+      "Learned Flutter within 7 days and began delivering production work",
       "Mentored 2 interns — one delivered a full AI-based OCR mobile application",
       "Owned end-to-end mobile lifecycles from requirements through store publishing",
       "Shipped apps to Google Play Store and Apple App Store",
@@ -68,7 +71,7 @@ const ChatBot = ({ isOpen, setIsOpen }) => {
       "Extra Mile Award 2025 at Uncanny Consulting Services LLP"
     ],
     
-    mentorship: "Shivang mentors 2 mobile development interns at Uncanny Consulting Services LLP. He guides them on React Native, code quality, and Agile delivery — including one intern who implemented a full AI-based OCR mobile application.",
+    mentorship: "Shivang mentors 2 mobile development interns at Uncanny Consulting Services LLP. He guides them on Flutter, code quality, and Agile delivery — including one intern who implemented a full AI-based OCR mobile application.",
     
     // Awards & Recognition
     award: {
@@ -99,12 +102,12 @@ const ChatBot = ({ isOpen, setIsOpen }) => {
     
     // Skills
     if (message.includes('skill') || message.includes('technology') || message.includes('tech stack') || message.includes('know')) {
-      return `Shivang is proficient in:\n\n**Mobile:** ${knowledgeBase.skills.slice(0, 4).join(', ')}\n\n**Backend & Services:** ${knowledgeBase.skills.slice(4, 11).join(', ')}\n\n**Tools:** ${knowledgeBase.skills.slice(11).join(', ')}\n\nHe has delivered 5+ production mobile apps across React Native and Flutter.`;
+      return `Shivang is proficient in:\n\n**Mobile:** ${knowledgeBase.skills.slice(0, 4).join(', ')}\n\n**Backend & Services:** ${knowledgeBase.skills.slice(4, 11).join(', ')}\n\n**Tools:** ${knowledgeBase.skills.slice(11).join(', ')}\n\nHe has delivered 4+ live production mobile apps across React Native and Flutter.`;
     }
     
     // Experience
     if (message.includes('experience') || message.includes('work') || message.includes('job') || message.includes('company')) {
-      return `Shivang currently works as a ${knowledgeBase.currentRole} at ${knowledgeBase.currentCompany} (${knowledgeBase.currentDuration}).\n\nHe has ${knowledgeBase.totalExperience} of professional experience building cross-platform mobile applications for clients in India, the U.S., and the UAE. He also mentors 2 mobile development interns, including one who built a full AI-based OCR application.\n\n🏆 He received the ${knowledgeBase.award.title} (${knowledgeBase.award.year}) from ${knowledgeBase.award.company}.`;
+      return `Shivang currently works as a ${knowledgeBase.currentRole} at ${knowledgeBase.currentCompany} (${knowledgeBase.currentDuration}).\n\nHe has ${knowledgeBase.totalExperience} of experience — from founding SS Brothers and self-publishing apps as an independent developer, to React Native development at Jamrio Technologies, to leading mobile development at Uncanny for clients in India, the U.S., and the UAE. He also mentors 2 mobile development interns, including one who built a full AI-based OCR application.\n\n🏆 He received the ${knowledgeBase.award.title} (${knowledgeBase.award.year}) from ${knowledgeBase.award.company}.`;
     }
 
     // Mentorship
@@ -126,13 +129,16 @@ const ChatBot = ({ isOpen, setIsOpen }) => {
       if (message.includes('jamrio')) {
         return `**Jamrio Community App:**\n${knowledgeBase.projects.jamrio}\n\nA feature-rich social platform for artists with real-time communication.`;
       }
+      if (message.includes('ss brothers') || message.includes('cricket') || message.includes('affiliate')) {
+        return `**SS Brothers:**\n${knowledgeBase.projects.ssbrothers}`;
+      }
       if (message.includes('syra') || message.includes('coffee')) {
         return `**Syra Coffee:**\n${knowledgeBase.projects.syracoffee}\n\nShivang took over and managed this e-commerce project, demonstrating strong team collaboration skills.`;
       }
       if (message.includes('ocr') || message.includes('intern') || message.includes('mentor')) {
         return `**Intern Mentorship — AI OCR App:**\n${knowledgeBase.projects.mentorship}`;
       }
-      return `Shivang has worked on several production projects:\n\n1. **OMNIYAT** — Luxury concierge app (Flutter, in UAT)\n2. **Intern Mentorship** — AI-based OCR app (guided intern delivery)\n3. **Primp & Blow** — Salon booking (App Store & Play Store)\n4. **Syra Coffee** — E-commerce coffee app (Live)\n5. **OTR** — Author networking platform\n6. **Jamrio** — Social platform for artists\n\nHe has also built personal projects including EVC Finder, e-commerce apps, and chat apps. Would you like details about any specific project?`;
+      return `Shivang has worked on several production projects:\n\n1. **OMNIYAT** — Luxury concierge app (Flutter, in UAT)\n2. **Intern Mentorship** — AI-based OCR app (guided intern delivery)\n3. **Primp & Blow** — Salon booking (App Store & Play Store)\n4. **Syra Coffee** — E-commerce coffee app (Live)\n5. **OTR** — Author networking platform\n6. **Jamrio** — Social platform for artists\n7. **SS Brothers** — Self-published cricket scoring & affiliate marketing apps\n\nHe has also built personal projects including EVC Finder, e-commerce apps, and chat apps. Would you like details about any specific project?`;
     }
     
     // Education
@@ -168,12 +174,12 @@ const ChatBot = ({ isOpen, setIsOpen }) => {
     
     // React Native specific
     if (message.includes('react native')) {
-      return `React Native is Shivang's primary expertise! He has:\n• 2+ years of React Native development\n• Built 5+ production apps using React Native\n• Experience with Expo, Redux, navigation, and native modules\n• Published apps on both iOS and Android stores\n• Integrated biometric auth, payments, real-time chat, and GraphQL/Supabase\n\nHe's also proficient in Flutter, having built the OMNIYAT app from scratch.`;
+      return `React Native is Shivang's primary expertise! He has:\n• 3+ years of mobile development experience\n• Shipped multiple production apps using React Native\n• Experience with Expo, Redux, navigation, and native modules\n• Published apps on both iOS and Android stores\n• Integrated biometric auth, payments, real-time chat, and GraphQL/Supabase\n\nHe's also proficient in Flutter, having built the OMNIYAT app from scratch.`;
     }
     
     // Flutter
     if (message.includes('flutter')) {
-      return `Yes! Shivang recently worked with Flutter on the OMNIYAT Concierge App, developing the entire mobile app from scratch. He's proficient in both React Native and Flutter, making him versatile for various mobile development needs.`;
+      return `Yes! Shivang built the OMNIYAT Concierge App in Flutter from scratch as the sole mobile developer, leads development on the live Syra Coffee app (Supabase + GraphQL), and mentors interns on Flutter. He works with Dart, Riverpod, GraphQL, Supabase, Square payments, and FlutterFlow — and learned Flutter within 7 days before delivering production work.`;
     }
     
     // Thank you

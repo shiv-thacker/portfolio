@@ -89,13 +89,14 @@ const Hero = () => {
         </motion.h1>
 
         <motion.p variants={itemVariants} className="hero-title">
-          React Native · Flutter · FlutterFlow · Vibe Coder
+          Mobile Application Developer | Flutter | FlutterFlow | React Native
         </motion.p>
 
         <motion.p variants={itemVariants} className="hero-description">
-          Mobile Application Developer with 2+ years of experience delivering
-          production-ready cross-platform apps in React Native and Flutter.
-          Mentor to 2 interns — one built a full AI-based OCR app. Extra Mile Award 2025.
+          Mobile Application Developer with 3+ years of experience — from founding and
+          self-publishing apps as an independent developer to leading mobile development
+          at a fast-paced startup. 4+ live production apps (3 built from scratch).
+          Mentor to 2 interns. Extra Mile Award 2025.
         </motion.p>
 
         <motion.div variants={itemVariants} className="hero-contact-info">

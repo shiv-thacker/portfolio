@@ -5,7 +5,10 @@ import {
   FaReact, FaNodeJs, FaMobileAlt, FaDatabase, 
   FaAws, FaGitAlt, FaAndroid, FaApple 
 } from 'react-icons/fa';
-import { SiExpo, SiRedux, SiMongodb, SiFirebase, SiFlutter } from 'react-icons/si';
+import {
+  SiExpo, SiRedux, SiMongodb, SiFirebase, SiFlutter,
+  SiDart, SiSupabase, SiGraphql, SiTypescript
+} from 'react-icons/si';
 import './Skills.css';
 
 const Skills = () => {
@@ -20,20 +23,23 @@ const Skills = () => {
       icon: <FaMobileAlt />,
       skills: [
         { name: 'React Native', icon: <FaReact />, level: 95 },
+        { name: 'Flutter', icon: <SiFlutter />, level: 85 },
+        { name: 'Dart', icon: <SiDart />, level: 85 },
+        { name: 'FlutterFlow', icon: <SiFlutter />, level: 80 },
         { name: 'Expo', icon: <SiExpo />, level: 90 },
-        { name: 'React JS', icon: <FaReact />, level: 70 },
         { name: 'Redux', icon: <SiRedux />, level: 85 },
-        { name: 'Flutter', icon: <SiFlutter />, level: 40 },
+        { name: 'TypeScript', icon: <SiTypescript />, level: 80 },
       ]
     },
     {
       title: 'Backend & Database',
       icon: <FaDatabase />,
       skills: [
+        { name: 'Supabase', icon: <SiSupabase />, level: 80 },
+        { name: 'GraphQL', icon: <SiGraphql />, level: 75 },
+        { name: 'Firebase', icon: <SiFirebase />, level: 80 },
         { name: 'Node.js', icon: <FaNodeJs />, level: 50 },
-        { name: 'Express.js', icon: <FaNodeJs />, level: 50 },
         { name: 'MongoDB', icon: <SiMongodb />, level: 50 },
-        { name: 'Firebase', icon: <SiFirebase />, level: 50 },
         { name: 'AWS', icon: <FaAws />, level: 50 },
       ]
     },
@@ -130,8 +136,11 @@ const Skills = () => {
           <h3 className="tech-title">All Technologies</h3>
           <div className="tech-tags">
             {[
-              'React Native', 'Flutter', 'Expo', 'Redux', 'GraphQL', 'Supabase',
-              'Node.js', 'MongoDB', 'Firebase', 'Braintree', 'AWS',
+              'React Native', 'Flutter', 'FlutterFlow', 'Dart', 'Riverpod', 'Expo',
+              'Redux', 'TypeScript', 'GraphQL', 'Supabase', 'Firebase', 'Braintree',
+              'Square Payments', 'Booker.io', 'WebSockets', 'Push Notifications',
+              'Biometric Auth', 'Keychain', 'GitHub Actions', 'CI/CD', 'Unit & Widget Testing',
+              'TensorFlow', 'Salesforce', 'Node.js', 'MongoDB', 'AWS',
               'Android', 'iOS', 'Git', 'Agile/Scrum'
             ].map((tech, index) => (
               <motion.span

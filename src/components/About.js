@@ -30,8 +30,8 @@ const About = () => {
   };
 
   const stats = [
-    { number: '5+', label: 'Production Apps' },
-    { number: '2+', label: 'Years Experience' },
+    { number: '4+', label: 'Live Production Apps' },
+    { number: '3+', label: 'Years Experience' },
     { number: '10+', label: 'Projects Completed' },
     { number: '2', label: 'Interns Mentored' },
   ];
@@ -61,12 +61,16 @@ const About = () => {
               >
                 Mobile Application Developer
               </motion.span>{' '}
-              with 2+ years of experience building and shipping cross-platform apps
-              in React Native and Flutter for clients in India, the U.S., and the UAE.
+              with 3+ years of experience — from founding and self-publishing mobile apps
+              as an independent developer to leading mobile development at a fast-paced
+              startup, delivering <strong>4+ live production applications</strong> (3 built
+              from scratch) for clients in India, the U.S., and the UAE.
             </p>
             <p className="about-description">
-              Experienced in <strong>Agile/Scrum</strong>, end-to-end mobile delivery,
-              and client collaboration. Published apps on the App Store and Play Store.
+              Proficient in <strong>React Native, Flutter, and FlutterFlow</strong>, with
+              hands-on experience integrating payments, GraphQL, Supabase, Firebase, and
+              real-time features. Skilled at coordinating between clients and backend teams
+              to ensure on-time, high-quality delivery.
               <strong> Mentor to 2 interns</strong>, including one who built a full
               AI-based OCR mobile application. Recognized with the{' '}
               <strong>Extra Mile Award 2025</strong> at Uncanny Consulting Services LLP.
