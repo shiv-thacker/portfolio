@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaEnvelope, FaPhone, FaPlay } from 'react-icons/fa';
+import profileImage from '../assets/profile.jpg';
 import './Hero.css';
 
 const Hero = () => {
@@ -73,6 +74,14 @@ const Hero = () => {
         initial="hidden"
         animate="visible"
       >
+        <motion.div variants={itemVariants} className="hero-profile-wrapper">
+          <img
+            src={profileImage}
+            alt="Shivang Thacker"
+            className="hero-profile-image"
+          />
+        </motion.div>
+
         <motion.div variants={itemVariants} className="hero-greeting">
           <motion.span
             animate={{ rotate: [0, 20, 0, 20, 0] }}
