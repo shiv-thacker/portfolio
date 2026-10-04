@@ -74,103 +74,105 @@ const Hero = () => {
         initial="hidden"
         animate="visible"
       >
+        <div className="hero-text">
+          <motion.div variants={itemVariants} className="hero-greeting">
+            <motion.span
+              animate={{ rotate: [0, 20, 0, 20, 0] }}
+              transition={{ duration: 1.5, repeat: Infinity, repeatDelay: 1 }}
+              className="wave"
+            >
+              👋
+            </motion.span>
+            Hi, I'm
+          </motion.div>
+
+          <motion.h1 variants={itemVariants} className="hero-name">
+            SHIVANG THACKER
+          </motion.h1>
+
+          <motion.p variants={itemVariants} className="hero-title">
+            Mobile Application Developer | Flutter | FlutterFlow | React Native
+          </motion.p>
+
+          <motion.p variants={itemVariants} className="hero-description">
+            Mobile Application Developer with 3+ years of experience — from founding and
+            self-publishing apps as an independent developer to leading mobile development
+            at a fast-paced startup. 4+ live production apps (3 built from scratch).
+            Mentor to 2 interns. Extra Mile Award 2025.
+          </motion.p>
+
+          <motion.div variants={itemVariants} className="hero-contact-info">
+            <motion.a
+              href="tel:+918320567250"
+              whileHover={{ scale: 1.05, x: 5 }}
+              className="contact-item"
+            >
+              <FaPhone /> +91 8320567250
+            </motion.a>
+            <motion.a
+              href="mailto:shivangthacker555@gmail.com"
+              whileHover={{ scale: 1.05, x: 5 }}
+              className="contact-item"
+            >
+              <FaEnvelope /> shivangthacker555@gmail.com
+            </motion.a>
+          </motion.div>
+
+          <motion.div variants={itemVariants} className="hero-buttons">
+            <motion.a
+              href="#contact"
+              className="btn btn-primary"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Get In Touch
+            </motion.a>
+            <motion.a
+              href="#video"
+              className="btn btn-secondary"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <FaPlay /> Watch Video Intro
+            </motion.a>
+            <motion.a
+              href="#projects"
+              className="btn btn-secondary"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              View Projects
+            </motion.a>
+          </motion.div>
+
+          <motion.div variants={itemVariants} className="hero-social">
+            <motion.a
+              href="https://www.linkedin.com/in/shivang-thacker-4b1a481b9/"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.2, rotate: 5 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <FaLinkedin />
+            </motion.a>
+            <motion.a
+              href="https://github.com/shivangthacker"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.2, rotate: -5 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <FaGithub />
+            </motion.a>
+          </motion.div>
+        </div>
+
         <motion.div variants={itemVariants} className="hero-profile-wrapper">
           <img
             src={profileImage}
             alt="Shivang Thacker"
             className="hero-profile-image"
           />
-        </motion.div>
-
-        <motion.div variants={itemVariants} className="hero-greeting">
-          <motion.span
-            animate={{ rotate: [0, 20, 0, 20, 0] }}
-            transition={{ duration: 1.5, repeat: Infinity, repeatDelay: 1 }}
-            className="wave"
-          >
-            👋
-          </motion.span>
-          Hi, I'm
-        </motion.div>
-
-        <motion.h1 variants={itemVariants} className="hero-name">
-          SHIVANG THACKER
-        </motion.h1>
-
-        <motion.p variants={itemVariants} className="hero-title">
-          Mobile Application Developer | Flutter | FlutterFlow | React Native
-        </motion.p>
-
-        <motion.p variants={itemVariants} className="hero-description">
-          Mobile Application Developer with 3+ years of experience — from founding and
-          self-publishing apps as an independent developer to leading mobile development
-          at a fast-paced startup. 4+ live production apps (3 built from scratch).
-          Mentor to 2 interns. Extra Mile Award 2025.
-        </motion.p>
-
-        <motion.div variants={itemVariants} className="hero-contact-info">
-          <motion.a 
-            href="tel:+918320567250"
-            whileHover={{ scale: 1.05, x: 5 }}
-            className="contact-item"
-          >
-            <FaPhone /> +91 8320567250
-          </motion.a>
-          <motion.a 
-            href="mailto:shivangthacker555@gmail.com"
-            whileHover={{ scale: 1.05, x: 5 }}
-            className="contact-item"
-          >
-            <FaEnvelope /> shivangthacker555@gmail.com
-          </motion.a>
-        </motion.div>
-
-        <motion.div variants={itemVariants} className="hero-buttons">
-          <motion.a
-            href="#contact"
-            className="btn btn-primary"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Get In Touch
-          </motion.a>
-          <motion.a
-            href="#video"
-            className="btn btn-secondary"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <FaPlay /> Watch Video Intro
-          </motion.a>
-          <motion.a
-            href="#projects"
-            className="btn btn-secondary"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            View Projects
-          </motion.a>
-        </motion.div>
-
-        <motion.div variants={itemVariants} className="hero-social">
-          <motion.a
-            href="https://www.linkedin.com/in/shivang-thacker-4b1a481b9/"
-            target="_blank"
-            rel="noopener noreferrer"
-            whileHover={{ scale: 1.2, rotate: 5 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            <FaLinkedin />
-          </motion.a>
-          <motion.a
-            href="https://github.com/shivangthacker"
-            target="_blank"
-            rel="noopener noreferrer"
-            whileHover={{ scale: 1.2, rotate: -5 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            <FaGithub />
-          </motion.a>
         </motion.div>
       </motion.div>
 
